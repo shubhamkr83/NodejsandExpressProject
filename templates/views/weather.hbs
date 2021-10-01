@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css"
+        integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    {{>headers}}
+    <div class="box">
+        <div class="inputData">
+            <input type="text" id="cityName" placeholder="search your city" />
+            <input type="submit" value="search" id="submitBtn" />
+        </div>
+        <div class="tempInformation">
+            <div class="top_layer">
+                <p id="day"></p>
+                <p id="today_date">30 SEPT 2021</p>
+            </div>
+            <div class="main_layer ">
+                <p id="city_name">get output</p>
+                <div class="middle_layer data_hide">
+                    <p id="temp"> °C</p>
+                    <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../public/js/main.js"></script>
+</body>
+
+</html>
